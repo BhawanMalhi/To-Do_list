@@ -1,24 +1,24 @@
 body {
-    background-color: #f1c8e8ca;
+    background-color: #a1a4906b;
     min-height: 70vh;
     padding: 1rem;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:black;
+    color:rgb(68, 54, 54);
     font-family: "Architects Daughter", cursive;
     text-align: center;
     font-size: 130%;
   }
   
   .container {
-    width: 100%;
+    width: 25rem;
     height: auto;
     min-height: 500px;
-    max-width: 500px;
+    max-width: 1000px;
     min-width: 250px;
-    background:lightgoldenrodyellow;
+    background:rgba(167, 232, 247, 0.418);
     
     background-size: 25px 25px;
     border-radius:10px;
@@ -50,7 +50,7 @@ body {
     border-bottom: dashed 3px #48330c;
     font-family: "Architects Daughter", cursive;
     font-size: 1rem;
-    color: hsla(260, 94%, 6%, 0.7);
+    color:rgb(68, 54, 54);
     width: 70%;
     margin-bottom: 20px;
   }
@@ -63,14 +63,15 @@ body {
     padding-bottom: 3px;
     border-radius: 5px;
     background-color: #03432f50;
-    margin-right:0;
+    text-align: left;
+    
   }
   button span {
     background: #f1f5f8;
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 5px;
-    border: 2px solid hsl(198, 1%, 29%);
+    border: 1px solid hsl(198, 1%, 29%);
   }
   
   li {

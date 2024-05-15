@@ -1,5 +1,5 @@
-import { useState } from "react";
-
+import { useState ,useEffect} from "react";
+import { ToDoItems } from "./ToDoItems";
 function Body() {
   const [inputData, setInputData] = useState("");
   const [items, setItems] = useState([]);
@@ -7,6 +7,7 @@ function Body() {
   function handleInput(event) {
     const newValue = event.target.value;
     setInputData(newValue);
+  
   }
   function addBtn() {
     
@@ -15,9 +16,13 @@ function Body() {
       });
       setInputData("");
   }
-  function deleteItem()
+  function deleteItem(id)
   {
-
+     setItems(prevValue =>{
+      return prevValue.filter((item,index)=>{
+        return index !== id;
+      })
+     });
   }
   return (
     <div className="container">
@@ -32,8 +37,8 @@ function Body() {
       </div>
       <div>
       <ul>
-          {items.map(a => (
-            <li key={a}>{a} <button onClick={deleteItem}> <span>X</span></button></li>
+          {items.map((a,index) => (
+          <ToDoItems key={index} id={index}text={a} isDelete={deleteItem}/>
           ))}
         </ul>
       </div>
