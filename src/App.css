@@ -21,7 +21,7 @@ body {
     background:lightgoldenrodyellow;
     
     background-size: 25px 25px;
-    border-radius: 20px;
+    border-radius:10px;
     box-shadow: 4px 3px 7px 2px #00000040;
     padding: 1rem;
     box-sizing: border-box;
@@ -44,13 +44,13 @@ body {
     box-sizing: border-box;
     background-color: transparent;
     padding: 0.7rem;
-    border-bottom-right-radius: 15px 3px;
-    border-bottom-left-radius: 3px 15px;
+    /* border-bottom-right-radius: 15px 3px;
+    border-bottom-left-radius: 3px 15px; */
     border: solid 3px transparent;
     border-bottom: dashed 3px #48330c;
     font-family: "Architects Daughter", cursive;
     font-size: 1rem;
-    color: hsla(260, 2%, 25%, 0.7);
+    color: hsla(260, 94%, 6%, 0.7);
     width: 70%;
     margin-bottom: 20px;
   }
@@ -63,6 +63,7 @@ body {
     padding-bottom: 3px;
     border-radius: 5px;
     background-color: #03432f50;
+    margin-right:0;
   }
   button span {
     background: #f1f5f8;
